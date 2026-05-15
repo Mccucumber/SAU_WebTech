@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CV</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+    </head>
+    <body>
+        <header class="sub-header">
+            <nav>
+                <a href="../index.html" aria-label="Ana sayfa"><img class="logo-img" src="../images/Letter-H-PNG-Background-Image.png" alt="Logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-angle-double-right" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="../Hakkımda/Hakkımda.html">Hakkımda</a></li>
+                        <li><a href="../Şehrim/Sehrim.html">Şehrim</a></li>
+                        <li><a href="../Şehrim/Mirasımız.html">Mirasımız</a></li>
+                        <li><a href="../ilgi alanlarım/İlgi_alanlarım.html">İlgi alanlarım</a></li>
+                        <li><a href="../iletişim/contact_form.html">İletişim</a></li>
+                        <li><a href="../login/login.html">Giriş Yap</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showwMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>Özgeçmiş</h1>
+                <p>Eğitim, deneyim ve teknik ilgi alanlarımın kısa dökümü.</p>
+            </div>
+        </header>
+
+        <main class="cv-içerik">
+            <section class="cv-grid" aria-labelledby="egitim-baslik">
+                <article class="text-left">
+                    <h2 id="egitim-baslik">Şu An Eğitim Sürecim</h2>
+                    <p>Sakarya Üniversitesi Bilgisayar Mühendisliği bölümünde lisans eğitimime devam ediyorum. Sistem seviyesi programlama, entegrasyon mantığı ve farklı platformları birbirine bağlayan yazılım çözümleri ilgimi en çok çeken alanlar arasında.</p>
+
+                    <section class="semantic-note" aria-labelledby="beceri-baslik">
+                        <h2 id="beceri-baslik">Teknik Beceriler</h2>
+                        <article>
+                            <h3>Programlama</h3>
+                            <p>C dilinde düşük seviyeli kontrol, algoritma mantığı ve problem çözme üzerine çalışıyorum.</p>
+                        </article>
+                        <article>
+                            <h3>Elektronik ve Tasarım</h3>
+                            <p>Elektronik tamir tecrübem ve CAD tasarım ilgim, yazılım projelerini fiziksel üretimle birleştirmeme yardımcı oluyor.</p>
+                        </article>
+                    </section>
+                </article>
+
+                <aside class="text-right" aria-label="Eğitim ve deneyim zaman çizelgesi">
+                    <h3>Tamamlamış Olduğum Eğitimler</h3>
+                    <div>
+                        <span>Deneyap Türkiye Lise Seviyesi Eğitimi</span>
+                        <span>2022</span>
+                    </div>
+                    <div>
+                        <span>Edx Harvard CS50 Online Sertifika Eğitimi</span>
+                        <span>2024</span>
+                    </div>
+                    <div>
+                        <span>Sakarya Üniversitesi Bilgisayar Mühendisliği</span>
+                        <span>Devam</span>
+                    </div>
+                    <br>
+                    <h3>Çalışma Deneyimlerim</h3>
+                    <div>
+                        <span>4 ay elektrik teknikeri çıraklığı</span>
+                        <span>2022</span>
+                    </div>
+                    <div>
+                        <span>Pruva Teknik elektronik tamir çıraklığı</span>
+                        <span>2024</span>
+                    </div>
+                </aside>
+            </section>
+        </main>
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showwMenu() {
+                navLinks.style.right = '0';
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
