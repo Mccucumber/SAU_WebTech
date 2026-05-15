@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Şehrim</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+    </head>
+    <body>
+        <header class="header">
+            <nav>
+                <a href="../index.html" aria-label="Ana sayfa"><img class="logo-img" src="../images/Letter-H-PNG-Background-Image.png" alt="Logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-angle-double-right" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="../Hakkımda/Hakkımda.html">Hakkımda</a></li>
+                        <li><a href="Mirasımız.html">Mirasımız</a></li>
+                        <li><a href="../CV/CV.html">Cv</a></li>
+                        <li><a href="../ilgi alanlarım/İlgi_alanlarım.html">İlgi alanlarım</a></li>
+                        <li><a href="../iletişim/contact_form.html">İletişim</a></li>
+                        <li><a href="../login/login.html">Giriş Yap</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showwMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>İzmir ve Mutlaka Görülmesi Gereken Yerleri</h1>
+                <p>İzmir görülesi birçok yere sahip oldukça sakin ve huzurlu bir şehir olmakla beraber <br>çok da misafirperver, cana yakın insanlarla doludur.</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="sehir-bilgisi">
+                <h1>İzmir Hakkında</h1>
+                <p>İzmir, Ege kıyısında yer alan ve 4 milyonu aşan nüfusuyla Türkiye'nin en büyük şehirlerinden biridir. Deniz kıyısı, tarihi liman kültürü, üniversiteleri, çarşıları ve sakin ama canlı şehir ritmiyle benim için özel bir yere sahip.</p>
+            </section>
+
+            <section class="slider-alani" aria-labelledby="slider-baslik">
+                <h1 id="slider-baslik">Güzel İzmirden Bazı Kareler</h1>
+                <div id="izmirSlider" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#izmirSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Saat Kulesi"></button>
+                        <button type="button" data-bs-target="#izmirSlider" data-bs-slide-to="1" aria-label="Efes Antik Kenti"></button>
+                        <button type="button" data-bs-target="#izmirSlider" data-bs-slide-to="2" aria-label="Tarihi Asansör"></button>
+                        <button type="button" data-bs-target="#izmirSlider" data-bs-slide-to="3" aria-label="Bergama Zeus Sunağı"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="#saat-kulesi">
+                                <img src="../images/İzmir Saat Kulesi.jpeg" class="d-block w-100" alt="İzmir Saat Kulesi">
+                                <div class="carousel-caption">
+                                    <h2>Saat Kulesi</h2>
+                                    <p>Konak'ın simgesi.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#efes">
+                                <img src="../images/Efes Antik Kenti.jpeg" class="d-block w-100" alt="Efes Antik Kenti">
+                                <div class="carousel-caption">
+                                    <h2>Efes Antik Kenti</h2>
+                                    <p>Tarihin en etkileyici duraklarından biri.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#asansor">
+                                <img src="../images/tarihi asansör.jpeg" class="d-block w-100" alt="Tarihi Asansör">
+                                <div class="carousel-caption">
+                                    <h2>Tarihi Asansör</h2>
+                                    <p>İzmir manzarasına farklı bir açı.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#zeus-sunagi">
+                                <img src="../images/zeus sunağı.jpg" class="d-block w-100" alt="Bergama Zeus Sunağı">
+                                <div class="carousel-caption">
+                                    <h2>Bergama Zeus Sunağı</h2>
+                                    <p>Bergama'nın güçlü tarihinden bir iz.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#izmirSlider" data-bs-slide="prev" aria-label="Önceki görsel">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#izmirSlider" data-bs-slide="next" aria-label="Sonraki görsel">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="yerler">
+                <h1>Mutlaka Ziyaret Edilmesi Gereken Yerler</h1>
+                <p>Sizler için İzmir'e geldiğinizde görmeniz gerekecek bir günlük rotaları derledim.</p>
+                
+                <div class="row">
+                    <article id="saat-kulesi" class="şehir-col">
+                        <h3>Kordon, Kemeraltı ve Kızlarağası Hanı</h3>
+                        <p>İzmir'e gelen birinin mutlaka rotasında olması gereken bu yerler yakın olmasıyla beraber 
+                            aynı gün içerisinde gezinti için olanak sağlar. Alsancak ve Konak civarı İzmir'in en aktif bölgelerindendir.
+                            Aynı zamanda birçok eski yapıya da ev sahipliği yapar. Basmane eski gar, İzmir Saat Kulesi ve Konak İskele 
+                            gibi yerler bu civardadır.
+                        </p>
+                    </article>
+                    <article id="asansor" class="şehir-col">
+                        <h3>İnciraltı Körfez ve Engelliler Parkı</h3>
+                        <p>Çok sakin bir atmosfere sahip olmakla beraber güzel bir yürüyüş alanı ve bisim bisiklet servisiyle 
+                            eğlenceli vakit geçirebileceğiniz, hatta bisikletle yakınlardaki eski savaş gemisi ve denizaltını
+                            ziyaret etmeye gidebileceğiniz güzel bir bölgedir.
+                        </p>
+                    </article>
+                    <article id="zeus-sunagi" class="şehir-col">
+                        <h3>Bergama Zeus Sunağı</h3>
+                        <p>Parçalarının bir kısmı İngilizler tarafından kaçırılımış olsa da yine de Pergamonların 
+                            güney kuzey yolu üstüne inşa ettikleri bu güvenlik noktası, müthiş altı doldurulmuş tapınak ve yamaca yaslanmış antik
+                            tiyatrosuyla gerçekten de görülmeye değer bir yer.
+                        </p>
+                    </article>
+                    <article id="efes" class="şehir-col">
+                        <h3>Özdere, Gümüldür ve Doğanbey</h3>
+                        <p>İzmir'in güneyinde yer alan bu bölge müthiş sahilleriyle hem kum güneş ve deniz isteyenler hem de denizin altında yaşam arayan,
+                            tesis sıkıntısı olmayan macera tutkunları için de izole doğal plaj ve deniz kıyılarıyla oldukça güzel bir seyahat rotası.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="fotoğraflar">
+                <h1>İzmir'den Güzel Kareler</h1>
+                <p>Güzel İzmir'in güzel fotoğrafları.</p>
+                <div class="row">
+                    <div class="foto-col">
+                        <img src="../images/İzmir Saat Kulesi.jpeg" alt="İzmir Saat Kulesi">
+                        <div class="layer">
+                            <h3>Saat Kulesi</h3>
+                        </div>
+                    </div>
+                    <div class="foto-col">
+                        <img src="../images/Efes Antik Kenti.jpeg" alt="Efes Antik Kenti">
+                        <div class="layer">
+                            <h3>Efes Antik Kenti</h3>
+                        </div>
+                    </div>
+                    <div class="foto-col">
+                        <img src="../images/tarihi asansör.jpeg" alt="Tarihi Asansör">
+                        <div class="layer">
+                            <h3>Tarihi Asansör</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="denenecekler">
+                <h1>Ekstra Deneyimler</h1>
+                <p>Tabi ki bunlarla beraber kesinlikle deneyimleminizi şiddetle tavsiye edeceğim aktiviteler ve lezzetler var.</p>
+                <div class="row">
+                    <article class="denenecekler-col">
+                        <h3>Boyoz ve Gevrek</h3>
+                        <p> Her ne kadar farklı isimlendirme seçenekleri yüzünden alaya alınsak da gerçekten gevrek 
+                            simite nazaran çok üstün bir yiyecek ve boyoz gevrek pazar sabahları aileyle yenilenebilecek güzel bir seçenek.
+                            Özlellikle bu saatlerde almak için gelen insanlar olduğundan sabah taze yapılan bu hamurişleri insanların
+                            tabaklarındaki yerini alır.
+                        </p>
+                    </article>
+                    <article class="denenecekler-col">
+                        <h3>Çelebi Bomba</h3>
+                        <p>Yine Alsancak civarında Kıbrıs Şehitleri Caddesinde İzmir'in ilk bombacısı Çelebi Bomba'dan bomba alıp deniz kenarında oturup yiyebilirsiniz.
+                            Ayrıca Alsancak Gar çevresinde de bulabileceğiniz ilginç antikacılar ve dükkanlar bulabilirsiniz.
+                        </p>
+                    </article>
+                    <article class="denenecekler-col">
+                        <h3>Akşamüstü Göztepe Deniz Kıyısı</h3>
+                        <p>İzmir'in ne kadar inanılmaz tarihi ya da sürekli eğlence mekanları olmasa da akşamüstü özellikle yaz zamanı insanlar
+                            kordon ve deniz kıyısında çimlerde oturup vakit geçirmekten hoşlanırlar ve bu ortaya kiminin müzik açıp eğlendiği kiminin de derin
+                            sohbetlere daldığı hoş bir manzara yaratır.
+                        </p>
+                    </article>
+                 </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <h4>İzmir'i yakından tanımak için rotanı oluştur</h4>
+            <p>Tarihi durakları, sahil yürüyüşleri ve Ege lezzetleriyle şehir her mevsim keşfedilmeye değer.</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showwMenu() {
+                navLinks.style.right = '0';
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

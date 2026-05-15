@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,30,30,0.7), rgba(4,30,30,0.7)), url("../images/izmir_saat_kulesi.jpeg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav
+{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img
+{
+    width: 150px;
+}
+.logo-img
+{
+    max-height: 70px;
+    width: auto;
+}
+.nav-links
+{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size:30px;
+}
+.nav-links ul li::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336 ;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after
+{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 60px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+}
+
+nav  .fa
+{
+    display: none;
+}
+@media(max-width: 1100px)
+{
+    .text-box h1
+    {
+        font-size: 28px;
+    }
+    .nav-links ul li
+    {
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background-color: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color:#fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links{
+        padding: 30px;
+
+    }
+}
+
+.yerler
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #111;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+.şehir-col{
+    flex: 1 1 240px;
+    background: #fff3f3;
+    border-radius: 8px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.şehir-col:hover
+{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+.heritage-focus
+{
+    border-top: 4px solid rgb(159, 70, 38);
+}
+@media(max-width: 760px)
+{
+    .row{
+        flex-direction: column;
+    }
+}
+
+.fotoğraflar
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.foto-col
+{
+    flex-basis: 32%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    max-height: 580px;
+}
+.foto-col img{
+    width: 100%;  
+    display: block;
+}
+.layer
+{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+.layer:hover
+{
+    background: rgba(0, 0, 0, 0.2);
+}
+.layer h3
+{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3
+{
+    bottom: 49%;
+    opacity: 1;
+}
+.denenecekler
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px ;
+}
+.denenecekler-col
+{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.denenecekler img
+{
+    width:100%;
+    border-radius: 10px;
+}
+.denenecekler p
+{
+    padding:0;
+}
+.denenecekler h
+{
+    margin-top: 16px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.footer
+{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+footer h4
+{
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-weight: 600;
+}
+.sehir-bilgisi,
+.slider-alani
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+}
+.sehir-bilgisi p
+{
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+}
+.slider-alani
+{
+    padding-top: 50px;
+}
+.carousel
+{
+    margin-top: 28px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+.carousel-item a
+{
+    color: #fff;
+    text-decoration: none;
+}
+.carousel-item img
+{
+    height: 520px;
+    object-fit: cover;
+    filter: brightness(0.78);
+}
+.carousel-caption
+{
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
+}
+.carousel-caption h2
+{
+    font-size: 34px;
+}
+
+@media(max-width: 760px)
+{
+    .nav-links ul li a{
+        font-size: 20px;
+    }
+    .text-box h1{
+        font-size: 34px;
+    }
+    .text-box p{
+        font-size: 16px;
+    }
+    .carousel-item img{
+        height: 320px;
+    }
+    .carousel-caption h2{
+        font-size: 24px;
+    }
+}
